@@ -1,0 +1,77 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="SANGAVI_EHSMSANGAVI_EHSM.controller.risk"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app">
+		<pages>
+			<Page title="RESULT DETAILS">
+				<Button width="39.5rem" text="INSPECTION DETAILS" type="Emphasized" press="onLoginss"></Button>
+				<Button width="39.5rem" text="RESULT DETAILS" type="Emphasized" press="onLogin"></Button>
+				<content>
+					<Table id="producttable" items="{/results}">
+						<columns>
+							<Column width="4em">
+								<Text text="ExInsplot"/>
+							</Column>
+							<Column width="4em">
+								<Text text="Mandant"/>
+							</Column>
+							<Column width="4em">
+								<Text text="Prueflos"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Vorglfnr"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Merknr"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Satzstatus"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Pruefzeit"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Iststpum"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Anzwertg"/>
+							</Column>
+								<Column width="4em">
+								<Text text="OriginalInputt"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Zeiterstl"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Zeitaend"/>
+							</Column>
+								
+							
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{ExInsplot}"/>
+								    <Text text="{Mandant}"/>
+								    <Text text="{Prueflos}"/>
+								    <Text text="{Vorglfnr}"/>
+	                                <Text text="{Merknr}"/>
+								    <Text text="{Satzstatus}"/>
+							        <Text text="{Pruefzeit}"/>
+									<Text text="{Pruefzeitb}"/>
+								    <Text text="{Iststpum}"/>
+								    <Text text="{Anzwertg}"/>
+								    <Text text="{OriginalInputt}"/>
+								    <Text text="{Zeiterstl}"/>
+								    <Text text="{Zeitaend}"/>
+								   
+								    <!--<Button icon="sap-icon://display-more" width="80px" id="__button1" press="onClickCell"/>-->
+								     
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

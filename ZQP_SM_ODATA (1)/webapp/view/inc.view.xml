@@ -1,0 +1,69 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="SANGAVI_EHSMSANGAVI_EHSM.controller.inc"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app">
+		<pages>
+			<Page title="INSPECTION DETAILS">
+				<Button width="39.5rem" text="INSPECTION DETAILS" type="Emphasized" press="onLoginss"></Button>
+				<Button width="39.5rem" text="RESULT DETAILS" type="Emphasized" press="onLogin"></Button>
+				<content>
+					<Table id="producttable" items="{/results}">
+						<columns>
+							<Column width="4em">
+								<Text text="Inspectionslot"/>
+							</Column>
+							<Column width="4em">
+								<Text text="Plant"/>
+							</Column>
+							<Column width="4em">
+								<Text text="Vendor"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Material"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Materialsize"/>
+							</Column>
+								<Column width="4em">
+								<Text text="Purchase OrderNo"/>
+							</Column>
+								<Column width="4em">
+								<Text text="PurchaseOrder Item"/>
+							</Column>
+								<Column width="4em">
+								<Text text="MaterialDoc"/>
+							</Column>
+								<Column width="4em">
+								<Text text="MaterialDoc Item"/>
+							</Column>
+								
+								<Column width="4em">
+								<Text text="MaterialLong"/>
+							</Column>
+							
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text="{Insplot}"/>
+								    <Text text="{Plant}"/>
+								    <Text text="{Vendor}"/>
+								    <Text text="{Material}"/>
+	                                <Text text="{TxtMat}"/>
+								    <Text text="{PoNumber}"/>
+							        <Text text="{PoItem}"/>
+									<Text text="{MatDo}"/>
+								    <Text text="{MatdocItm}"/>
+								    
+								    <Text text="{MaterialLong}"/>
+								    
+								    <!--<Button icon="sap-icon://display-more" width="80px" id="__button1" press="onClickCell"/>-->
+								     
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,20 @@
+<mvc:View controllerName="SANGAVI_EHSMSANGAVI_EHSM.controller.login" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<App id="app">
+		<pages>
+			<Page title="KAAR TECHNOLOGIES" class = "bg1">
+				<content>
+                    <VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+                        <items>
+                        	
+                            <Text text="Enter your login credantials"/>
+                            <Input width="15rem" id="uid" placeholder="User ID"></Input>
+                            <Input width="15rem" id="pasw" placeholder="Password" type="Password"></Input>
+                            <Button width="15rem" text="Login" type="Emphasized" press="onLogin"></Button>
+                        </items>
+                    </VBox>
+                </content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
